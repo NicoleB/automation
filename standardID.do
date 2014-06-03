@@ -13,6 +13,7 @@ foreach var of local varlist {
 	local varType: type `var'
 	if !inlist("`varType'", "byte", "int", "long", "float", "double") {
 		replace `var'="." if inlist(`var', "NA", "")
+		replace `var' = subinstr(`var', "U", "", 1)
 		destring `var', replace
 	}
 	else {
