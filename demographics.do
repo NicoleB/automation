@@ -8,7 +8,7 @@
 
 */
 
-*USER: Replace the following with your do.file directory:
+*USER: Replace the following (after "cd") with your do.file directory:
 cd /Users/nicole/FHCRC/automation/
 
 
